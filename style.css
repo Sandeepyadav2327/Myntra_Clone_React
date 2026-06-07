@@ -1,0 +1,116 @@
+body{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.image{
+    position: relative;
+    left: 50px;
+    height:70px;
+    width:70px;
+}
+.option{
+    padding-top: 30px;
+}
+.but, .pro{
+    height: 30px;;
+    margin-right: 10px;
+    border: none;
+    background-color: white;
+    font-size: 22px;
+}
+
+.search{
+    width:400px;
+    height:35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.profile{
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+.middle{
+    background-color: rgb(203, 203, 116);
+    
+}
+.card{
+    background-color: rgb(44, 105, 44);
+    color: white;
+    border: 2px solid green;
+}
+
+
+
+.myntra-footer{
+    background-color: #f5f5f6;
+    padding: 40px 80px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.four-option-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.option-one{
+    display: flex;
+    flex-direction: column;
+}
+
+.option-one h5,
+.links h5{
+    color: #282c3f;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.option-one li,
+.links li{
+    list-style: none;
+    margin: 8px 0;
+}
+
+.option-one a,
+.links a{
+    text-decoration: none;
+    color: #696b79;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.option-one a:hover,
+.links a:hover{
+    color: #ff3f6c;
+}
+
+.links{
+    margin-top: 25px;
+}
+
+.myntra-footer strong{
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px){
+    .myntra-footer{
+        padding: 30px;
+    }
+
+    .four-option-footer{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import Card from "./component/Card";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+
 // header 
 // body
 //footer 
@@ -60,27 +64,18 @@ const arr = [
   { cloth: "Skirt", offer: "50-75% OFF", image: "https://source.unsplash.com/300x300/?mini-skirt" },
   { cloth: "Top", offer: "20-35% OFF", image: "https://source.unsplash.com/300x300/?crop-top" },
   { cloth: "Tank Top", offer: "40-60% OFF", image: "https://source.unsplash.com/300x300/?tanktop" },
-  { cloth: "Sweatshirt", offer: "30-50% OFF", image: "https://source.unsplash.com/300x300/?casual-sweatshirt" }
 ];
 
-function Card(props){
-    return (
-        <div style={{border:"2px solid black" , padding:"2px"}}>
-            <img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/kurta/s/f/n/-original-imahjzwctaqbbjjr.jpeg?q=90" height="200px" width="200px" />
-            <div style={{textAlign:"center"}}>
-                <h2>{props.cloth}</h2>
-                <h1>{props.offer}</h1>
-                <h2>Shop Now</h2>
-            </div>
-        </div>
-    )
-}
+
+
+
 
 function App(){
     return (
-        // header 
-        // body
-        <div style={{display:"flex", gap:"10px", flexWrap:"wrap"}}>
+        <>
+        <Header/>
+        
+        <div className="middle" style={{display:"flex", gap:"10px", flexWrap:"wrap"}}>
             {/* <Card cloth="T-Shirt" Offer="40-60% Off" />
             <Card cloth="Shirt" Offer="10-30% Off" />
             <Card cloth="T-Shirt" Offer="40-60% Off" />
@@ -93,7 +88,7 @@ function App(){
             <Card cloth="Cap" Offer="40-60% Off" />
             <Card cloth="T-Shirt" Offer="40-60% Off" />
             <Card cloth="Bra" Offer="15-35% Off" /> */}
-            
+
 
             {/* arr.map=> array of card bana k dega  */}
             {/* // dummy car with array  for loop array dega so use it ye array return kar k dega  */}
@@ -103,7 +98,9 @@ function App(){
 
 
         </div>
-        // footer
+        <Footer/>
+        </>
+        
     )
 }
 
