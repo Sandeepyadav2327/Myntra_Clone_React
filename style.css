@@ -114,3 +114,10 @@ body{
         gap: 30px;
     }
 }
+
+.btn1{
+    background-color: orange;
+    color: black;
+    height: 50px;
+    margin-bottom: 20px;
+}
